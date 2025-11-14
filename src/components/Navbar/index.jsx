@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Navbar, NavbarButton, NavbarButtons, NavbarLogo } from "./NavbarElements";
 import logo from '../../assets/logo.png';
 import logged_out_user from '../../assets/logged_out_user.jpg';
+import { useNavigate } from "react-router-dom";
 
 const NavbarElement = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,8 @@ const NavbarElement = () => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+    const navigate = useNavigate();
 
     return (
         <Navbar>
@@ -59,7 +62,7 @@ const NavbarElement = () => {
                                 color: '#333',
                                 textAlign: 'center'
                             }}
-                            onClick={() => alert("Sign-In clicked")}
+                            onClick={() => { setIsOpen(false); navigate('/login'); }}
                         >
                             Sign-In
                         </button>
@@ -74,7 +77,7 @@ const NavbarElement = () => {
                                 color: '#333',
                                 textAlign: 'center'
                             }}
-                            onClick={() => alert("Register clicked")}
+                            onClick={() => { setIsOpen(false); navigate('/register'); }}
                         >
                             Register
                         </button>

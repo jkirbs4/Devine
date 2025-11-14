@@ -4,16 +4,13 @@ const Home = () => {
   return (
     <div
       style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100vw',
-        height: '50vh', 
+        position: 'relative',
+        width: '100%',
+        minHeight: '50vh',
         backgroundImage: `url(${Devine_Tree})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        zIndex: -1,
       }}
     >
       <div

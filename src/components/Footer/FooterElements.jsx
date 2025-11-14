@@ -7,8 +7,6 @@ export const FooterBar = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     padding: 0.2rem 2rem;
-    z-index: 12;
+    /* Normal flow footer; sits after content */
 `;

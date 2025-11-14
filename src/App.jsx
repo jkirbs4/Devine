@@ -9,17 +9,23 @@ import {
 import Home from "./pages";
 import Games from "./pages/games";
 import Connect from "./pages/connect";
+import Login from "./pages/login";
+import Register from "./pages/register";
 
 function App() {
     return (
         <Router>
             <NavbarElement />
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/games" element={<Games />} />
-                <Route path="/connect" element={<Connect />} />
-            </Routes>
+            <main style={{ minHeight: '100vh' }}>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/games" element={<Games />} />
+                    <Route path="/connect" element={<Connect />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                </Routes>
+            </main>
             <Footer />
         </Router>
     );
