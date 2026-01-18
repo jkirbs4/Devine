@@ -1,0 +1,10 @@
+
+### **Unit Testing**
+
+- **Purpose:** Unit tests are the low-level tests that are designed to assess the functionality of individual modules. If a unit test fails, that module is unverified until the test is passed. For our product, unit tests will be written prior to the development of our modules in order that a clear standard for logical requirements can be pursued. Our unit tests will be rigorous to test for edge cases in logic, leaving room for higher level tests such as integration and system tests to focus on bringing the system together with correct logic. The unit tests that we generate will be categorical, pertaining to distinct subsystems. Examples of categories include the database, the game objects, or social media API’s. When creating an automated flow of test execution, all of the unit tests for a specified subsystem will be run prior to the integration tests for that subsystem.
+- **Scope:** Unit tests shall be written to verify significant atomic components that are designed to fulfill a single purpose. These unit tests can be divided into two categories:
+    1. *Class-Based Unit Tests*: These larger unit tests are designed to evaluate the behavior of programming objects along with their significant functions.
+    2. *Function-Based Unit Tests*: These smaller unit tests are designed to evaluate the performance of larger, independent functions.
+- **Writing:** Unit tests shall be drafted prior to writing code to establish a specific set of logical requirements to fulfill. A set of inputs mapped to required outputs must be determined prior to writing the test. Inputs and outputs must be constructed according to two cases:
+    1. *Passing Case*: The outputs the passing case reflect the behavior of the class or function when it is supposed to be behaving correctly.
+    2. *Failing Case*: The outputs of the failing case reflect the behavior of the class or function when it is supposed to be behaving incorrectly.
