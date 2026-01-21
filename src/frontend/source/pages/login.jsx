@@ -1,6 +1,6 @@
 
-import Devine_Tree from '../../src/assets/Devine_Tree.png';
-import play_button from '../../src/assets/play_button.png';
+import Devine_Tree from '../../source/assets/Devine_Tree.png';
+import play_button from '../../source/assets/play_button.png';
 
 const Login = () => {
     return (

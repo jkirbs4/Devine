@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Devine_Tree from '../../src/assets/Devine_Tree.png';
-import play_button from '../../src/assets/play_button.png';
+import Devine_Tree from '../assets/Devine_Tree.png';
+import play_button from '../assets/play_button.png';
 
 const Register = () => {
   const [email, setEmail] = useState('');

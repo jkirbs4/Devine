@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies inside the image
 RUN npm install
 
+# Copy the app source code
+COPY . .
+
 # Expose Vite's dev port
 EXPOSE 5173
 

@@ -1,0 +1,14 @@
+services:                  # Top-level section: defines all containers ("services") to run
+
+  web:                     # Name of the service (you’ll refer to it as "web")
+    build: .               # Build the Docker image using the Dockerfile in the current folder
+
+    ports:                 # Port mappings between your computer and the container
+      - "5173:5173"        # hostPort:containerPort (open localhost:5173 -> container port 5173)
+
+    volumes:               # Bind mounts / persistent storage mappings
+      - .:/app             # Mount your current project folder into /app inside the container (live updates)
+      - /app/node_modules  # Anonymous volume so container keeps its own node_modules (prevents overwrite)
+
+    command: npm run dev -- --host   # Override Dockerfile CMD: run Vite dev server and bind to all interfaces
+

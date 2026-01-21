@@ -10,3 +10,5 @@
 5. Navigate into the new project directory by running `cd my_app`.
 6. Run `npm install` to install the project dependencies listed in `package.json`. This command should create the directory `node_modules` and the file `package-lock.json`.
 7. Run `npm run dev` to start up the development server for the React application. This runs the "dev" script from `package.json`.
+
+---

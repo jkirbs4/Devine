@@ -1,5 +1,5 @@
 
-### File Tree Structure
+### **File Tree Structure**
 - **src**: A directory to store the main source code.
     - **frontend**: All of the front-end code for the webapp.
     - **backend**: All of the back-end code for the webapp.
@@ -8,7 +8,9 @@
     - **integration**: The collection of integration tests.
 - **docs**: A folder to store formal documentation for Devine.
 
-### Review Policy
+---
+
+### **Review Policy**
 
 This policy concerns the formal review of code before branch commits.
 1. **Independent Branch:** If a developer is working on a branch that is solely their responsibility, no code review is required prior to a push.
