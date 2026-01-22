@@ -8,6 +8,8 @@
     - **integration**: The collection of integration tests.
 - **docs**: A folder to store formal documentation for Devine.
 
+![Devine File Tree Structure](Devine_Architecture.png)
+
 ---
 
 ### **Review Policy**
