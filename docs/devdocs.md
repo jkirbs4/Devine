@@ -43,5 +43,6 @@ This policy concerns the formal review of code before branch commits.
 1. https://www.altexsoft.com/blog/technical-documentation-in-software-development-types-best-practices-and-tools/
 2. https://medium.com/@sarvt/why-file-structure-is-important-organizing-for-efficiency-and-scalability-056b12f42e43
 3. https://appliedtechnology.github.io/protips/folderstructure.html
+4. https://medium.com/@jaychu259/git-branch-naming-conventions-2025-the-ultimate-guide-for-developers-5f8e0b3bb9f7
 
 ---
