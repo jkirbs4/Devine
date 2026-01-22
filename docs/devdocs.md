@@ -23,7 +23,9 @@ This policy concerns the formal review of code before branch commits.
 1. **Independent Branch:** If a developer is working on a branch that is solely their responsibility, no code review is required prior to a push.
 2. **Shared Branch:** If more than one developer are working on a branch, then a pull request must be generated so that the code from each developer is closely evaluated prior to commiting.
 3. **Parent Directory:** If a branch has more than one sub-branches, and a developer must merge changes from one of the subranches, then the developer must create a pull request and evaluate the code with other developers actively working on the other sub-branches.
-
+4. **Pre-Verification:** The individuals involved within a merge or shared branch must verify their respective code through testing before creating a pull request.
+5. **Pull Request:** An official Github pull-request must be opened for the individulas involved. Review the code visually and ensure that conflicts do not emerge.
+6. **Post-Verification:** Run the verification tests one more time to ensure that the code works when merged together.
 ---
 
 ### **Code Development & Review Policy**
