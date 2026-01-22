@@ -1,11 +1,11 @@
 
 import Footer from "../components/Footer";
 
-const Connect = () => {
+const Social = () => {
     return (
         <>
         </>
     );
 };
 
-export default Connect;
+export default Social;

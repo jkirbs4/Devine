@@ -27,7 +27,7 @@ const NavbarElement = () => {
             </NavbarLogo>
             <NavbarButtons>
                 <NavbarButton to="/home">Home</NavbarButton>
-                <NavbarButton to="/connect">Connect</NavbarButton>
+                <NavbarButton to="/social">Social</NavbarButton>
                 <NavbarButton to="/games">Games</NavbarButton>
             </NavbarButtons>
 

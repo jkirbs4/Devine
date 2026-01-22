@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages";
 import Games from "./pages/games";
-import Connect from "./pages/connect";
+import Social from "./pages/social";
 import Login from "./pages/login";
 import Register from "./pages/register";
 
@@ -25,7 +25,7 @@ function AppShell() {
                     <Route exact path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/games" element={<Games />} />
-                    <Route path="/connect" element={<Connect />} />
+                    <Route path="/social" element={<Social />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>
