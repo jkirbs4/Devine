@@ -65,8 +65,7 @@ const Register = () => {
           backgroundColor: '#fff',
           border: '8px solid #b2ffb2',
           borderRadius: '8px',
-          maxWidth: '400px',
-          maxHeight: '600px',
+          maxWidth: '700px',
           margin: '0 auto',
         }}
       >
@@ -281,9 +280,11 @@ const Register = () => {
               Date of Birth
             </label>
             <input
-              type="date"
+              type="text"
+              placeholder="mm/dd/yyyy"
               value={dateOfBirth}
               onChange={(e) => setDateOfBirth(e.target.value)}
+              pattern="\d{2}/\d{2}/\d{4}"
               required
               style={{
                 backgroundColor: '#fff',
@@ -307,10 +308,13 @@ const Register = () => {
               backgroundColor: '#1b671b',
               color: '#fff',
               fontSize: '1.2rem',
+              fontFamily: "'Lexend', sans-serif",
               cursor: 'pointer',
+              width: '200px',
+              alignSelf: 'center',
             }}
           >
-            Register
+            Create Account
           </button>
         </form>
 
