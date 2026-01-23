@@ -4,7 +4,13 @@ import Devine_Tree from '../assets/Devine_Tree.png';
 import play_button from '../assets/play_button.png';
 
 const Register = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [dateOfBirth, setDateOfBirth] = useState('');
   const [status, setStatus] = useState('');
   const navigate = useNavigate();
 
@@ -80,62 +86,216 @@ const Register = () => {
         {/* FORM */}
         <form
           onSubmit={handleSubmit}
-          style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '1rem' }}
+          style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '0 1rem' }}
         >
-          <label
-            style={{
-              color: '#000',
-              fontFamily: "'Lexend', sans-serif",
-              fontSize: '2rem',
-              marginBottom: '0.5rem',
-              fontWeight: '400',
-              textAlign: 'center',
-            }}
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            style={{
-              backgroundColor: '#fff',
-              color: '#000',
-              border: '3px solid #000',
-              borderRadius: '4px',
-              padding: '0.5rem',
-              margin: '0 auto 0.25rem',
-              width: '65%',
-              fontSize: '1.2rem',
-            }}
-          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              First Name
+            </label>
+            <input
+              type="text"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
 
-          <label
-            style={{
-              color: '#000',
-              fontFamily: "'Lexend', sans-serif",
-              fontSize: '2rem',
-              marginBottom: '0.5rem',
-              fontWeight: '400',
-              textAlign: 'center',
-            }}
-          >
-            Password
-          </label>
-          <input
-            type="password"
-            style={{
-              backgroundColor: '#fff',
-              color: '#000',
-              border: '3px solid #000',
-              borderRadius: '4px',
-              padding: '0.5rem',
-              margin: '0 auto 0.25rem',
-              width: '65%',
-              fontSize: '1.2rem',
-            }}
-          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Last Name
+            </label>
+            <input
+              type="text"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Username
+            </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+              }}
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <label
+              style={{
+                color: '#000',
+                fontFamily: "'Lexend', sans-serif",
+                fontSize: '2rem',
+                fontWeight: '400',
+                minWidth: '275px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Date of Birth
+            </label>
+            <input
+              type="date"
+              value={dateOfBirth}
+              onChange={(e) => setDateOfBirth(e.target.value)}
+              required
+              style={{
+                backgroundColor: '#fff',
+                color: '#000',
+                border: '3px solid #000',
+                borderRadius: '4px',
+                padding: '0.5rem',
+                fontSize: '1.2rem',
+                flex: '1',
+              }}
+            />
+          </div>
 
           <button
             type="submit"
