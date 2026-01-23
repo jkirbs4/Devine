@@ -88,3 +88,19 @@ export const NavbarButtons = styled.div`
         display: none;
     }
 `;
+
+export const NavbarDivider = styled.span`
+    display: inline-block;
+    height: 2rem;
+    width: 2px;
+    background-color: #000;
+    color: #000;
+    margin: 0 0.5rem;
+    user-select: none;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    &:hover {
+        color: #000;
+    }
+`;

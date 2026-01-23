@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Navbar, NavbarButton, NavbarButtons, NavbarLogo } from "./NavbarElements";
+import { Navbar, NavbarButton, NavbarButtons, NavbarLogo, NavbarDivider } from "./NavbarElements";
 import logo from '../../assets/logo.png';
 import logged_out_user from '../../assets/logged_out_user.jpg';
 import { useNavigate } from "react-router-dom";
@@ -29,6 +29,9 @@ const NavbarElement = () => {
                 <NavbarButton to="/home">Home</NavbarButton>
                 <NavbarButton to="/social">Social</NavbarButton>
                 <NavbarButton to="/games">Games</NavbarButton>
+                <NavbarButton to="/scores">Scores</NavbarButton>
+                <NavbarButton to="/goals">Goals</NavbarButton>
+                <NavbarDivider />
             </NavbarButtons>
 
             <div style={{ position: 'relative' }} ref={dropdownRef}>
