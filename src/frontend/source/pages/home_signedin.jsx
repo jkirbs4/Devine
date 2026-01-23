@@ -1,8 +1,8 @@
-
-import Devine_Tree from '../../source/assets/Devine_Tree.png';
+// CURRENT HOME PAGE FOR SIGNED IN USERS -> TBD FOR SIGNED OUT USERS
+import Devine_Tree from '../assets/Devine_Tree.png';
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Home_SignedIn = () => {
   return (
     <div
       style={{
@@ -121,4 +121,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home_SignedIn;

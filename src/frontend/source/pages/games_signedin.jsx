@@ -1,11 +1,11 @@
 
 import Footer from "../components/Footer";
 
-const Games = () => {
+const Games_SignedIn = () => {
     return (
         <>
         </>
     );
 };
 
-export default Games;
+export default Games_SignedIn;

@@ -7,13 +7,14 @@ import {
     Route,
     useLocation,
 } from "react-router-dom";
-import Home from "./pages";
-import Games from "./pages/games";
+import Home_SignedIn from "./pages/home_signedin";
+import Games from "./pages/games_signedin";
 import Social from "./pages/social";
 import Scores from "./pages/scores";
 import Goals from "./pages/goals";
 import Login from "./pages/login";
 import Register from "./pages/register";
+import Games_SignedIn from "./pages/games_signedin";
 
 function AppShell() {
     const location = useLocation();
@@ -24,9 +25,9 @@ function AppShell() {
             <NavbarElement />
             <main style={{ minHeight: '100vh' }}>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/games" element={<Games />} />
+                    <Route exact path="/" element={<Home_SignedIn />} />
+                    <Route path="/home_signedin" element={<Home_SignedIn />} />
+                    <Route path="/games_signedin" element={<Games_SignedIn />} />
                     <Route path="/social" element={<Social />} />
                     <Route path="/scores" element={<Scores />} />
                     <Route path="/login" element={<Login />} />

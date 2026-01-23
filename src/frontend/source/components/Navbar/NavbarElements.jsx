@@ -104,3 +104,19 @@ export const NavbarDivider = styled.span`
         color: #000;
     }
 `;
+
+export const NavbarLogOutButton = styled(RouterLink)`
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    transition: font-size 0.2s, color 0.2s;
+    &:hover {
+        color: #b2ffb2;
+        font-size: 1.25em;
+    }
+`;
