@@ -37,6 +37,14 @@ This policy concerns the formal review of code before branch commits.
 - `test-` will exist to develop integration and E2E tests.
 - `release-` will exist to handle our build releases.
 
+##### **Branch Commands:**
+
+- `git branch` will display the current working branch.
+- `git branch -a` will dispaly all branches on the local device and in remotes/origin (on Github).
+- `git branch <branch-name>` will create a new branch.
+- `git checkout <branch-name>` will switch to the provided branch.
+- `git merge <branch-name>` will merge the provided branch into the current branch.
+
 ---
 
 ### **Standards/Documentation References**
