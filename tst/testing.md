@@ -12,3 +12,16 @@
     5. *Privacy*: This can be verified as a manual test in which a client user must find no way to observe the data of another client user.
     6. *Regulatory*: Regulatory tests will be specifically tailored to organizations such as HIPPA. An example that applies to our project concerns logging database transactions with personal data. Our system will produce the required logs, and our test will verify that the logs contain the correct information.
 - **Documentation:** All official verification attempts must be documented with indication of success and failure for individual tests.
+
+---
+
+### **Pytest**
+
+- **Pytest:** When writing and executing tests with the `pytest` library, it is important to remember some key principles:
+    1. All testing files and functions should be prefixed with `test_` and all test classes should be prefixed with `Test`.
+    2. Return values do not determine test success or failure. Rather, the failure of an `assert` statement or the raising of an `Exception` must occur to fail a test. A test passes if it does not fail.
+    3. Pytest evaluates the coverage of your code, so be sure to write tests that evaluate every significant pathway the program can take.
+    4. Pytests are meant to be created with a particular ![anatomy](https://docs.pytest.org/en/stable/explanation/anatomy.html). This anatomy is broken down into arrange, act, assert, and cleanup.
+    5. Individual tests can be executed with `pytest <test_file_name>`.
+
+![Documentation](https://docs.pytest.org/en/stable/getting-started.html#get-started) for pytest can be read to better understand how to write well-structured tests.

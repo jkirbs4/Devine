@@ -8,3 +8,5 @@
 - **Writing:** Unit tests shall be drafted prior to writing code to establish a specific set of logical requirements to fulfill. A set of inputs mapped to required outputs must be determined prior to writing the test. Inputs and outputs must be constructed according to two cases:
     1. *Passing Case*: The outputs the passing case reflect the behavior of the class or function when it is supposed to be behaving correctly.
     2. *Failing Case*: The outputs of the failing case reflect the behavior of the class or function when it is supposed to be behaving incorrectly.
+
+---
