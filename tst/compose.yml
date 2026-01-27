@@ -1,0 +1,6 @@
+services:
+  tests:
+    build:
+      context: ..
+      dockerfile: tst/Dockerfile
+    command: ["sh", "-c", "tail -f /dev/null"]
