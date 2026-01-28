@@ -45,8 +45,15 @@ const Register = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         paddingTop: '85px',
+        paddingBottom: '85px',
       }}
     >
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: 'calc(100vh - 170px)',
+      }}>
       <div
         style={{
           display: 'flex',
@@ -56,7 +63,7 @@ const Register = () => {
           border: '8px solid #b2ffb2',
           borderRadius: '8px',
           maxWidth: '700px',
-          margin: '2rem auto',
+          margin: '0 auto',
         }}
       >
         <h2
@@ -319,6 +326,7 @@ const Register = () => {
             onClick={handlePlayClick}
           /> */}
         </div>
+      </div>
       </div>
     </div>
   );

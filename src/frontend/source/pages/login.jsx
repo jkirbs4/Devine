@@ -14,18 +14,24 @@ const Login = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             paddingTop: '85px',
+            paddingBottom: '85px',
             }}
         >
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: 'calc(100vh - 170px)',
+            }}>
             <div style = {{
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '0.5rem 0.5rem',
+                padding: '1.5rem 2rem',
                 backgroundColor: '#fff',
                 border: '8px solid #b2ffb2',
                 borderRadius: '8px',
-                maxWidth: '400px',
+                width: '400px',
                 maxHeight: '600px',
-                margin: '2rem auto',
             }}>
                 <h2 style = {{color: '#1b671b', fontFamily: "'Lexend', sans-serif",
                             fontSize: '3rem', margin: '0.5rem 0.5rem', fontWeight: '1000',
@@ -72,6 +78,7 @@ const Login = () => {
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
                 <img src={play_button} alt="Login" style={{ height: '4rem', width: '4rem' }} />
                 </div>
+            </div>
             </div>
         </div>
     );

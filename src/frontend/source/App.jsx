@@ -18,7 +18,6 @@ import Games_SignedIn from "./pages/games_signedin";
 
 function AppShell() {
     const location = useLocation();
-    const hideFooter = location.pathname === "/login" || location.pathname === "/register";
 
     return (
         <>
@@ -34,7 +33,7 @@ function AppShell() {
                     <Route path="/register" element={<Register />} />
                 </Routes>
             </main>
-            {!hideFooter && <Footer />}
+            <Footer />
         </>
     );
 }
