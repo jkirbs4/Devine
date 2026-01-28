@@ -32,7 +32,8 @@ class DatabaseManager:
         return g.db
     
 
-    def disconnect():
+    @staticmethod
+    def disconnect(exception=None):
         """
         Disconnect the database.
         """
@@ -41,13 +42,15 @@ class DatabaseManager:
             db.close()
 
 
-    def initialize(self) -> bool:
+    def initialize(self, db_name: str) -> bool:
         """
         Setup database and create tables from the schema.
+
+        @param db_name (str): The filename of the database.
         """
         click.echo("Initializing new database...")
 
-        db = self.connect()
+        db = self.connect(db_name)
         schema_file = Path(current_app.root_path) / "static" / "schema.sql"
         db.executescript(schema_file.read_text(encoding="utf-8"))
         db.commit()
@@ -57,15 +60,15 @@ class DatabaseManager:
         return True
 
 
-    def delete(self, db_path: Path | None = None) -> bool:
+    def delete(self, db_name: str) -> bool:
         """
         Delete database. If no path is not provided, deletes the app's configured DB.
 
-        @param db_path (Path): The path of the database.
+        @param db_name (str): The filename of the database.
         """
         click.echo("Deleting database...")
 
-        path = Path(db_path) if db_path is not None else self.db_path()
+        path = Path(current_app.root_path) / "instance" / db_name
         if path.exists():
             path.unlink()
             click.echo(f"Deleted {path}")
