@@ -24,4 +24,7 @@
     4. Pytests are meant to be created with a particular ![anatomy](https://docs.pytest.org/en/stable/explanation/anatomy.html). This anatomy is broken down into arrange, act, assert, and cleanup.
     5. Individual tests can be executed with `pytest <test_file_name>`.
 
+### **Experimental Testing**
+- Some experimental testing can be done quickly on the local machine in a virtual environment. A virtual environment can be created with `python -m venv venv` and activated with `source venv/Scripts/activate` in bash. The command `deactivate` can be used to exit the virtual environment. Be sure to include `venv/` in the `.gitignore` file so the virtual environment does not get sifted into the repository branches.
+
 ![Documentation](https://docs.pytest.org/en/stable/getting-started.html#get-started) for pytest can be read to better understand how to write well-structured tests.
