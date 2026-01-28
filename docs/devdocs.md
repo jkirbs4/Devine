@@ -42,6 +42,7 @@ This policy concerns the formal review of code before branch commits.
 - `git branch` will display the current working branch.
 - `git branch -a` will dispaly all branches on the local device and in remotes/origin (on Github).
 - `git branch <branch-name>` will create a new branch.
+- `git branch -d <branch-name>` will delete a branch.
 - `git checkout <branch-name>` will switch to the provided branch.
 - `git merge <branch-name>` will merge the provided branch into the current branch.
 
