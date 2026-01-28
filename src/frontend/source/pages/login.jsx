@@ -13,19 +13,9 @@ const Login = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
+            paddingTop: '85px',
             }}
         >
-            <h1
-            style={{
-                fontSize: '4rem',
-                fontFamily: "'Kaushan Script', cursive",
-                marginBottom: '2rem',
-                marginTop: '100px',
-                textAlign: 'center',
-            }}
-            >
-            Devine
-            </h1>
             <div style = {{
                 display: 'flex',
                 flexDirection: 'column',
@@ -35,7 +25,7 @@ const Login = () => {
                 borderRadius: '8px',
                 maxWidth: '400px',
                 maxHeight: '600px',
-                margin: '0 auto',
+                margin: '2rem auto',
             }}>
                 <h2 style = {{color: '#1b671b', fontFamily: "'Lexend', sans-serif",
                             fontSize: '3rem', margin: '0.5rem 0.5rem', fontWeight: '1000',

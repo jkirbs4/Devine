@@ -44,19 +44,9 @@ const Register = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
+        paddingTop: '85px',
       }}
     >
-      <h1
-        style={{
-          fontSize: '4rem',
-          fontFamily: "'Kaushan Script', cursive",
-          marginBottom: '2rem',
-          marginTop: '100px',
-          textAlign: 'center',
-        }}
-      >
-        Devine
-      </h1>
       <div
         style={{
           display: 'flex',
@@ -66,7 +56,7 @@ const Register = () => {
           border: '8px solid #b2ffb2',
           borderRadius: '8px',
           maxWidth: '700px',
-          margin: '0 auto',
+          margin: '2rem auto',
         }}
       >
         <h2
