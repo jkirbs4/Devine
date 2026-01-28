@@ -1,0 +1,16 @@
+name: Deploy
+
+on: 
+  push:
+    branches: [ "main", "dev" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: echo "Deploy workflow is running!"
