@@ -1,6 +1,5 @@
 
 import Devine_Tree from '../../source/assets/Devine_Tree.png';
-import play_button from '../../source/assets/play_button.png';
 
 const Login = () => {
     return (
@@ -26,57 +25,76 @@ const Login = () => {
             <div style = {{
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '1.5rem 2rem',
+                padding: '1rem 1rem',
                 backgroundColor: '#fff',
                 border: '8px solid #b2ffb2',
                 borderRadius: '8px',
-                width: '400px',
-                maxHeight: '600px',
+                width: '600px',
+                maxHeight: '700px',
             }}>
                 <h2 style = {{color: '#1b671b', fontFamily: "'Lexend', sans-serif",
-                            fontSize: '3rem', margin: '0.5rem 0.5rem', fontWeight: '1000',
+                            fontSize: '3.5rem', margin: '1rem 0.5rem', fontWeight: '1000',
                             textAlign: 'center'}}>
                     Sign-In
                 </h2>
-                <form style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '0 1rem' }}>
 
-                    <label style = {{color: '#000', fontFamily: "'Lexend', sans-serif",
-                            fontSize: '2rem', marginBottom: '0.5rem', fontWeight: '400',
-                            textAlign: 'center'}}>Email</label>
-                    <input 
-                        type="email"
-                        style={{
-                            backgroundColor: '#fff',
-                            color: '#000',
-                            border: '3px solid #000',
-                            borderRadius: '4px',
-                            padding: '0.5rem',
-                            margin: '0 auto 0.25rem',
-                            width: '65%',
-                            fontSize: '1.2rem'
-                        }}
-                    />
-                    <label style = {{color: '#000', fontFamily: "'Lexend', sans-serif",
-                            fontSize: '2rem', marginBottom: '0.5rem', fontWeight: '400',
-                            textAlign: 'center'}}>Password</label>
-                    <input 
-                        type="password"
-                        style={{
-                            backgroundColor: '#fff',
-                            color: '#000',
-                            border: '3px solid #000',
-                            borderRadius: '4px',
-                            padding: '0.5rem',
-                            margin: '0 auto 0.25rem',
-                            width: '65%',
-                            fontSize: '1.2rem'
-                        }}
-                    />
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                        <label style = {{color: '#000', fontFamily: "'Lexend', sans-serif",
+                                fontSize: '2.25rem', fontWeight: '400',
+                                minWidth: '175px', whiteSpace: 'nowrap'}}>Email</label>
+                        <input 
+                            type="email"
+                            style={{
+                                backgroundColor: '#fff',
+                                color: '#000',
+                                border: '3px solid #000',
+                                borderRadius: '4px',
+                                padding: '0.75rem',
+                                fontSize: '1.4rem',
+                                width: '400px'
+                            }}
+                        />
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                        <label style = {{color: '#000', fontFamily: "'Lexend', sans-serif",
+                                fontSize: '2.25rem', fontWeight: '400',
+                                minWidth: '175px', whiteSpace: 'nowrap'}}>Password</label>
+                        <input 
+                            type="password"
+                            style={{
+                                backgroundColor: '#fff',
+                                color: '#000',
+                                border: '3px solid #000',
+                                borderRadius: '4px',
+                                padding: '0.75rem',
+                                fontSize: '1.4rem',
+                                width: '400px'
+                            }}
+                        />
+                    </div>
                 </form>
-                <a style = {{color: 'gray', textAlign: 'left', marginTop: '0.5rem'}}>Need to Register?</a>
-                <a style = {{color: 'gray', textAlign: 'left', marginTop: '0.5rem'}}>Forgot Password?</a>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
-                <img src={play_button} alt="Login" style={{ height: '4rem', width: '4rem' }} />
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1.5rem', marginBottom: '1rem', gap: '2.5rem' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        <a style = {{color: 'gray', fontSize: '1.1rem'}}>Need to Register?</a>
+                        <a style = {{color: 'gray', fontSize: '1.1rem'}}>Forgot Password?</a>
+                    </div>
+                    <button 
+                        type="submit"
+                        style={{
+                            backgroundColor: '#D9D9D9',
+                            color: '#000',
+                            border: '5px solid #1b671b',
+                            borderRadius: '8px',
+                            padding: '1rem 2rem',
+                            fontSize: '1.75rem',
+                            fontWeight: '600',
+                            fontFamily: "'Lexend', sans-serif",
+                            cursor: 'pointer'
+                        }}
+                    >
+                        Sign-In
+                    </button>
                 </div>
             </div>
             </div>
