@@ -11,6 +11,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [dateOfBirth, setDateOfBirth] = useState('');
+  const [termsAccepted, setTermsAccepted] = useState(false);
   const [status, setStatus] = useState('');
   const navigate = useNavigate();
 
@@ -20,6 +21,11 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!termsAccepted) {
+      alert('Please accept the Terms of Service Agreement to continue.');
+      return;
+    }
 
     try {
       const res = await fetch('http://localhost:3001/api/send-thank-you', {
@@ -313,6 +319,26 @@ const Register = () => {
           >
             Create Account
           </button>
+
+          {/* Links under button */}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.25rem', marginTop: '0.75rem' }}>
+            <a style={{ color: 'gray', fontSize: '1rem' }}>Already have an Account?</a>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <a style={{ color: 'gray', fontSize: '1rem' }}>Terms of Service Agreement</a>
+              <input 
+                type="checkbox" 
+                checked={termsAccepted}
+                onChange={(e) => setTermsAccepted(e.target.checked)}
+                style={{ 
+                  width: '24px', 
+                  height: '24px', 
+                  cursor: 'pointer', 
+                  accentColor: '#808080',
+                  border: '2px solid #808080'
+                }}
+              />
+            </div>
+          </div>
         </form>
 
         {/* Status Message */}
