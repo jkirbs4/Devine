@@ -29,6 +29,7 @@ function AppShell() {
                     <Route path="/games_signedin" element={<Games_SignedIn />} />
                     <Route path="/social" element={<Social />} />
                     <Route path="/scores" element={<Scores />} />
+                    <Route path="/goals" element={<Goals />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>
